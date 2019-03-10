@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    height: 63px;
+    width: 100%;
+    background: rgb(50, 50, 50);
+    position: relative;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 550px;
+    justify-content: space-between;
+}
+
+.image-logo {
+    align-self: flex-end;
+}
+
+.menu-left {
+    display: flex;
+    text-transform: uppercase;
+    width: 200px;
+    justify-content: space-between;
+}
+
+
+.menu-right {
+    display: flex;
+    text-transform: uppercase;
+    width: 200px;
+    justify-content: space-between;
+}
+
+
+.point {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', bold, sans-serif;
+    font-size: 16px;
+}
+
+a:hover {
+    color: rgb(46, 179, 152);
+}
+
+
+.button-submit {
+    background: green;
+}
+
+
+.header-container:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid rgb(50, 50, 50);
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.hexagon-container {
+    text-align: center;
+    margin-top: 140px;
+    height: 680px;
+
+
+}
+
+.social-container {
+    display: flex;
+    float: right;
+    padding-top: 100px;
+}
+
+
+.social:hover {
+    filter: saturate(2);
+}
+
+.line {
+    overflow: hidden;
+    text-align: center;
+    font-size: 25px;
+    margin: 1px 30px 1px;
+}
+
+.line:before,
+.line:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(228, 233, 235);
+    position: relative;
+}
+
+.line:before {
+    margin-left: -100%;
+    left: -70px;
+}
+
+.line:after {
+    margin-right: -100%;
+    right: -70px;
+}
+
+.hexagon {
+    width: 180px;
+    height: 210px;
+    margin: 5px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.hex-layer-1 {
+
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+.hex-layer-2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: visible;
+}
+
+.hex-layer-2 img {
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.hexagon:hover {
+    transform: rotate(-240deg);
+    transition: transform 1s ease-in;
+}
+
+.row {
+    min-width: 1000px;
+}
+
+
+.row-translate .hexagon {
+    position: relative;
+    top: -55px;
+}
+
+.row-native:not(:first-child) {
+    margin-top: -110px;
+}
+
+.info {
+    height: 340px;
+    background: rgb(46, 179, 152);
+    color: #d7fcf5;
+    display: flex;
+    justify-content: center;
+}
+
+.info-person {
+    margin-left: 20px
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    width: 790px;
+    justify-content: space-around;
+    border-left: solid 1px #219d84;
+    border-right: solid 1px #219d84;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
+}
+
+.contact {
+    width: 780px;
+    overflow: auto;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.contact-container {
+    border-bottom: solid 1px rgb(43, 43, 43);
+    border-top: solid 1px rgb(43, 43, 43);
+    margin: 12px 30px 12px;
+
+}
+
+form {
+    width: 70%;
+    float: left;
+    overflow: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #454545;
+    color: inherit;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-style: none;
+    font: 1em 'Open Sans';
+    font-family: 'lato', sans-serif;
+}
+
+form input[type="submit"] {
+    width: auto;
+    float: right;
+    text-transform: uppercase;
+    background-color: #2eb398;
+    padding: 15px 30px;
+    font-family: 'lato', sans-serif;
+    color: #ffffff;
+}
+
+.contactInfo {
+    width: 30%;
+    float: left;
+    font-size: 0.8em;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+.contactInfo p {
+    margin-bottom: 45px;
+    color: rgba(225, 225, 225, 0.7);
+    width: 194px;
+}
+
+.contactInfo strong {
+    color: white;
+}
+
+address {
+    font-style: normal;
+    font-weight: 600;
+}
+
+address div {
+    margin-bottom: 3px;
+}
+
+address img {
+    position: relative;
+    top: 5px;
+    float: left;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.profile-person {
+    color: rgb(32, 129, 109);
+    font-size: 15px;
+}
+
+.info-person p {
+    font-size: 13px;
+}
+
+.location {
+    margin-left: 3px;
+    margin-right: 13px;
+    top: 4px;
+}
+
+.phone {
+    margin-left: 1px;
+    margin-right: 11px;
+}
+
+.mail {
+    margin-right: 10px;
+}
+
+.contactContainer {
+    padding: 10px 0;
+    text-align: justify;
+    overflow: hidden;
+    background-color: #323232;
+    color: #e0e0e0;
+}
+
+.contactContainer h2 {
+    font-size: 2em;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.contactContainer h3 {
+    font-size: 1.2em;
+    line-height: 1em;
+    padding-bottom: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 300;
+}
+
+footer {
+    height: 545px;
+}
